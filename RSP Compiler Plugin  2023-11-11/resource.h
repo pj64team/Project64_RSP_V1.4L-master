@@ -2,6 +2,7 @@
 // Microsoft Developer Studio generated include file.
 // Used by RSP.rc
 //
+#define IDC_STATIC						-1
 #define IDC_CHECK_SSE                   1001
 #define IDC_CHECK_MMX                   1002
 #define IDC_CHECK_MMX2                  1003

@@ -27,14 +27,18 @@
 #if defined(__cplusplus)
 extern "C" {
 #endif
-
+#ifdef _DEBUG
+#define SUFFIX "(Debug) "
+#else
+#define SUFFIX ""
+#endif
 /************ DLL info **************/
 #if !defined( EXTERNAL_RELEASE )
 	#define AppName  "RSP (Legacy Build 1)"
-	#define AboutMsg "RSP Legacy Plugin 1.4\nMade for Project64 Legacy (c)\nBuild 1\n\nby PJ64LegacyTeam"
+	#define AboutMsg "RSP Legacy Plugin 1.4a" SUFFIX "\nMade for Project64 Legacy (c)\nBuild 1\n\nby PJ64LegacyTeam"
 #else
-	#define AppName  "RSP 1.40"
-	#define AboutMsg "RSP emulation Plugin 1.4\nMade for Project64 (c)\nVersion 1.40\n\nby Jabo & Zilmar"
+	#define AppName  "RSP 1.40a"
+	#define AboutMsg "RSP emulation Plugin 1.4a" SUFFIX "\nMade for Project64 (c)\nVersion 1.40\n\nby Jabo & Zilmar"
 #endif
 
 /************ Profiling **************/

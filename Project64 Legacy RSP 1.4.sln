@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33529.622
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RSP Compiler Plugin 1.4", "RSP Compiler Plugin 2023-11-11\RSP Compiler Plugin.vcxproj", "{18743F7C-7C3F-4A2D-929B-63C06F26BC41}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RSP Compiler Plugin 1.4", "RSP Compiler Plugin  2023-11-11\RSP Compiler Plugin.vcxproj", "{18743F7C-7C3F-4A2D-929B-63C06F26BC41}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RSP Interpreter Plugin 1.4", "RSP Interpreter Plugin 2023-11-11\RSP Interpreter Plugin.vcxproj", "{29801A57-59A1-4585-BC86-C8B699BF312A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RSP Interpreter Plugin 1.4", "RSP Interpreter Plugin  2023-11-11\RSP Interpreter Plugin.vcxproj", "{29801A57-59A1-4585-BC86-C8B699BF312A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,22 +19,6 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.Debug|Win32.ActiveCfg = Debug|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.Debug|Win32.Build.0 = Debug|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.GLE Debug|Win32.ActiveCfg = Debug|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.GLE Debug|Win32.Build.0 = Debug|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.GLE Release|Win32.ActiveCfg = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.GLE Release|Win32.Build.0 = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.HLE Release|Win32.ActiveCfg = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.HLE Release|Win32.Build.0 = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.LLE Release|Win32.ActiveCfg = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.LLE Release|Win32.Build.0 = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.MLE Release|Win32.ActiveCfg = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.MLE Release|Win32.Build.0 = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.Release External|Win32.ActiveCfg = Release External|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.Release External|Win32.Build.0 = Release External|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.Release|Win32.ActiveCfg = Release|Win32
-		{D4A4FEA8-2451-481D-8EC1-4362696E44D1}.Release|Win32.Build.0 = Release|Win32
 		{18743F7C-7C3F-4A2D-929B-63C06F26BC41}.Debug|Win32.ActiveCfg = Debug|Win32
 		{18743F7C-7C3F-4A2D-929B-63C06F26BC41}.Debug|Win32.Build.0 = Debug|Win32
 		{18743F7C-7C3F-4A2D-929B-63C06F26BC41}.GLE Debug|Win32.ActiveCfg = Debug|Win32
@@ -63,10 +47,10 @@ Global
 		{29801A57-59A1-4585-BC86-C8B699BF312A}.LLE Release|Win32.Build.0 = LLE Release|Win32
 		{29801A57-59A1-4585-BC86-C8B699BF312A}.MLE Release|Win32.ActiveCfg = MLE Release|Win32
 		{29801A57-59A1-4585-BC86-C8B699BF312A}.MLE Release|Win32.Build.0 = MLE Release|Win32
-		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release External|Win32.ActiveCfg = HLE Release|Win32
-		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release External|Win32.Build.0 = HLE Release|Win32
-		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release|Win32.ActiveCfg = HLE Release|Win32
-		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release|Win32.Build.0 = HLE Release|Win32
+		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release External|Win32.ActiveCfg = Debug|Win32
+		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release External|Win32.Build.0 = Debug|Win32
+		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release|Win32.ActiveCfg = LLE Release|Win32
+		{29801A57-59A1-4585-BC86-C8B699BF312A}.Release|Win32.Build.0 = LLE Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

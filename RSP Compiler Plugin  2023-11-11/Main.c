@@ -126,6 +126,7 @@ __declspec(dllexport) void CloseDLL (void) {
 	RegSetValueEx(hKey, "Compiler", 0, REG_BINARY, (BYTE*)&Compiler, sizeof(RSP_COMPILER));
 	#endif
 
+	RegSetValueEx(hKey, "Graphics HLE", 0, REG_DWORD, (BYTE*)&GraphicsHle, sizeof(DWORD));
 	RegSetValueEx(hKey, "Audio HLE", 0, REG_DWORD, (BYTE*)&AudioHle, sizeof(DWORD));
 	RegSetValueEx(hKey, "CPU Core", 0, REG_DWORD, (BYTE*)&CPUCore, sizeof(DWORD));
 	RegCloseKey(hKey);
@@ -157,7 +158,7 @@ BOOL WINAPI DllMain(  HINSTANCE hinst, DWORD fdwReason, LPVOID lpvReserved ){
 __declspec(dllexport) void GetDllInfo ( PLUGIN_INFO * PluginInfo ) {
 	PluginInfo->Version = 0x0101;
 	PluginInfo->Type = PLUGIN_TYPE_RSP;
-	sprintf(PluginInfo->Name,"RSP Legacy Plugin 1.4");
+	sprintf(PluginInfo->Name,"RSP Legacy Plugin 1.4a" SUFFIX);
 	PluginInfo->NormalMemory = FALSE;
 	PluginInfo->MemoryBswaped = TRUE;
 }
@@ -368,8 +369,13 @@ __declspec(dllexport) void InitiateRSP ( RSP_INFO Rsp_Info, DWORD * CycleCount) 
 		#endif
 
 		dwSize = 4;
-		lResult = RegQueryValueEx(hKey, (LPSTR) "Audio HLE", NULL, (LPDWORD) 0, (LPBYTE) &AudioHle, &dwSize);
-		if (lResult != ERROR_SUCCESS) { 
+		lResult = RegQueryValueEx(hKey, (LPSTR)"Graphics HLE", NULL, (LPDWORD)0, (LPBYTE)&GraphicsHle, &dwSize);
+		if (lResult != ERROR_SUCCESS) {
+			GraphicsHle = FALSE;
+		}
+		dwSize = 4;
+		lResult = RegQueryValueEx(hKey, (LPSTR)"Audio HLE", NULL, (LPDWORD)0, (LPBYTE)&AudioHle, &dwSize);
+		if (lResult != ERROR_SUCCESS) {
 			AudioHle = FALSE;
 		}
 		dwSize = 4;

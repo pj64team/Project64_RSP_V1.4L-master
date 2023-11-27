@@ -2,6 +2,7 @@
 // Microsoft Developer Studio generated include file.
 // Used by RSP.rc
 //
+#define IDC_STATIC						-1
 #define ID_RSPCOMMANDS                  5001
 #define ID_RSPREGISTERS                 5002
 #define ID_PROFILING_LOGINDIVIDUALBLOCKS 5005
